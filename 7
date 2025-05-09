@@ -1,0 +1,30 @@
+programa
+{
+    funcao inicio()
+    {
+        real economiaReais, cotacaoDolar, precoPS5Dolar, precoPS5Reais
+        real faltamDolares, faltamReais, precoLivro, qtdLivros
+
+        precoPS5Dolar = 1300
+        precoLivro = 50.00  // Preço do livro "Harry Potter e a Ordem da Fênix"
+        
+        escreva("Digite quanto você tem economizado em reais: ")
+        leia(economiaReais)
+
+        escreva("Digite a cotação atual do dólar: ")
+        leia(cotacaoDolar)
+
+        precoPS5Reais = precoPS5Dolar * cotacaoDolar
+
+        // Calcula quanto falta em dólares e reais
+        faltamDolares = precoPS5Dolar - (economiaReais / cotacaoDolar)
+        faltamReais = precoPS5Reais - economiaReais
+
+        // Calcula quantos livros poderiam ser comprados
+        qtdLivros = precoPS5Reais / precoLivro
+
+        escreva("\nFaltam ", faltamDolares, " dólares para comprar o PS5.\n")
+        escreva("Faltam ", faltamReais, " reais para comprar o PS5.\n")
+        escreva("Com o valor de um PS5, dá para comprar ", qtdLivros, " livros 'Harry Potter e a Ordem da Fênix'.\n")
+    }
+}
