@@ -1,0 +1,26 @@
+programa
+{
+    funcao inicio()
+    {
+        real comprimento, largura, area, dobroArea, dobroAreaCm
+
+        escreva("Digite o comprimento em metros: ")
+        leia(comprimento)
+
+        escreva("Digite a largura em metros: ")
+        leia(largura)
+
+        // Calcula a área
+        area = comprimento * largura
+
+        // Calcula o dobro da área
+        dobroArea = area * 2
+
+        // Converte o dobro da área para centímetros quadrados
+        dobroAreaCm = dobroArea * 10000  // 1 m² = 10,000 cm²
+
+        escreva("A área do gramado é: ", area, " m²\n")
+        escreva("O dobro da área é: ", dobroArea, " m²\n")
+        escreva("O dobro da área em centímetros quadrados é: ", dobroAreaCm, " cm²\n")
+    }
+}
