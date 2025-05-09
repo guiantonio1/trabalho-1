@@ -1,0 +1,22 @@
+programa
+{
+    funcao inicio()
+    {
+        cadeia mae, filha, aux
+
+        escreva("Digite o nome da mãe: ")
+        leia(mae)
+
+        escreva("Digite o nome da filha: ")
+        leia(filha)
+
+        // Fazendo a troca usando uma variável auxiliar
+        aux = mae
+        mae = filha
+        filha = aux
+
+        escreva("Após a troca:\n")
+        escreva("Mãe: ", mae, "\n")
+        escreva("Filha: ", filha)
+    }
+}
